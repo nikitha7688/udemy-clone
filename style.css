@@ -54,6 +54,9 @@ body{
     align-items: center;
 
 }
+.navbar__s4{
+    display: none;
+}
 
 .mylearning{
     position: relative;
@@ -61,8 +64,8 @@ body{
 }
 .mylearning__popup{
     position: absolute;
-    background-color: white;
-    border: solid black 1px;
+    background-color: rgb(224, 114, 206);
+    border: solid rgb(0, 0, 0) 1px;
     width: 100px;
     top:150%;
     padding: 20px;
@@ -102,14 +105,17 @@ body{
 
 
 .sale-image img{
-    width: 100px;
+    width:100%;
+    height: auto;
+    flex-grow: 1;
+    position: relative;
 }
 
 .sale-image{
-    position: relative;
+    position:relative;
 }
 .sale-image__offer{
-    background-color: white;
+    background-color: rgb(228, 112, 199);
     color: black;
     width: 35%;
     position: absolute;
@@ -216,14 +222,29 @@ justify-content: space-between;
     body{
         font-size:10px;
     }
-}
-
-@media screen and (max-width:600px) {
     .course-card{
         flex-basis: 40%;
     }
-   
+}
 
+
+    @media screen and (max-width:600px){
+        
+        .categories{
+            display: none;
+        }
+        .navbar__s2,.navbar__s3{
+            display: none;
+        }
+        .navbar__s4{
+            display: block;
+        }
+        .sale-image__offer{
+            position: absolute;
+            top:8%;
+            width: 35%;
+            left:3%;
+        }
 
 }  
 
