@@ -145,7 +145,9 @@ body{
 
 }
 .course-card{
-    width: 250px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 
 }
 .course-card img{
@@ -208,5 +210,20 @@ justify-content: space-between;
     align-items: center;
 }
 
-    
+/*--media queries*/
+
+@media screen and (max-width:800px) {
+    body{
+        font-size:10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .course-card{
+        flex-basis: 40%;
+    }
+   
+
+
+}  
 
